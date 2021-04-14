@@ -1,5 +1,3 @@
-export class BreadCrumb {
-    name:string;
-    route:string;
-    isActive:boolean;
+export interface BreadCrumb {
+  label: string;
 }

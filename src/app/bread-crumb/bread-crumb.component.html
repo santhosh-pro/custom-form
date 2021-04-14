@@ -1,5 +1,3 @@
-<ul class="breadcrumb">
-    <li *ngFor="let item of values">
-        <a [ngClass]="item.isActive?'active':''" [routerLink]="item.route">{{item.name}}</a>
-    </li>
-  </ul>
+<ul>
+  <li *ngFor="let breadcrumb of (breadcrumbs$ | async)">{{ breadcrumb.label }}</li>
+</ul>

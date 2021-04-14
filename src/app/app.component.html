@@ -1,5 +1,8 @@
-<form [formGroup]="form">
-<app-text-box placeholder="Name" formControlName="name"></app-text-box>
-<app-bread-crumb [values]="breadCrumbValues"></app-bread-crumb>
-<button (click)="submit()"> Submit</button>
-</form>
+<app-bread-crumb></app-bread-crumb>
+
+<ul>
+  <li><a routerLink="/one">Page One</a></li>
+  <li><a routerLink="/one/two">Page Two</a></li>
+</ul>
+
+<router-outlet></router-outlet>
