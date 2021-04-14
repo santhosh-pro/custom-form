@@ -1,0 +1,5 @@
+<ul class="breadcrumb">
+    <li *ngFor="let item of values">
+        <a [ngClass]="item.isActive?'active':''" [routerLink]="item.route">{{item.name}}</a>
+    </li>
+  </ul>

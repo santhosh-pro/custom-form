@@ -1,4 +1,5 @@
 <form [formGroup]="form">
 <app-text-box placeholder="Name" formControlName="name"></app-text-box>
+<app-bread-crumb [values]="breadCrumbValues"></app-bread-crumb>
 <button (click)="submit()"> Submit</button>
 </form>
